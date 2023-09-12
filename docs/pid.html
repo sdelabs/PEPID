@@ -1,14 +1,12 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Untitled Document</title>
 </head>
 
-<body>
-	
 <Module>
-  <ModulePrefs title="PID controller demo" /> 
+  <ModulePrefs title="PID controller demo"> 
   <Content type="html">
 
 		<!--script src="processing-1.3.6.min.js"></script-->
@@ -331,6 +329,7 @@ public class Scrollbar
 		// ----- end of Processing ---------
 		</script>
 		
+<body>
 		
 	<table border="1" bordercolor="white" cellspacing="0">
 	<tbody>
@@ -342,18 +341,18 @@ public class Scrollbar
 				<fieldset>
 					<legend>PID parameters</legend>
 					<div style="text-align:right">
-					Kp: <input id="Kp" type="text" size="10" value="1.0" onchange="UpdateParameters()" /><br />
-					Ki: <input id="Ki" type="text" size="10" value="0.1" onchange="UpdateParameters()" /><br />
-					Kd: <input id="Kd" type="text" size="10" value="0.2" onchange="UpdateParameters()" />
+					Kp: <input id="Kp" type="text" size="10" value="1.0" onchange="UpdateParameters()"><br />
+					Ki: <input id="Ki" type="text" size="10" value="0.1" onchange="UpdateParameters()"><br />
+					Kd: <input id="Kd" type="text" size="10" value="0.2" onchange="UpdateParameters()">
 					</div>
 				</fieldset>
 
 				<fieldset>
 					<legend>Car parameters</legend>
 					<div style="text-align:right">
-					mass(kg): <input id="mass" type="text" size="10" value="0.2" onchange="UpdateParameters()" /><br />
-					damping(0-1): <input id="damping" type="text" size="10" value="0.0" onchange="UpdateParameters()" /><br />
-					motor force limit(N): <input id="maxf" type="text" size="10" value="1.0" onchange="UpdateParameters()" />
+					mass(kg): <input id="mass" type="text" size="10" value="0.2" onchange="UpdateParameters()"><br />
+					damping(0-1): <input id="damping" type="text" size="10" value="0.0" onchange="UpdateParameters()"><br />
+					motor force limit(N): <input id="maxf" type="text" size="10" value="1.0" onchange="UpdateParameters()">
 					</div>
 				</fieldset>
 				<button type="button" onclick="ResetCar()">Reset robot</button>
